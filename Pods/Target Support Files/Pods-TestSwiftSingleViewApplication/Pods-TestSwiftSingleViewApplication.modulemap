@@ -1,0 +1,6 @@
+framework module Pods_TestSwiftSingleViewApplication {
+  umbrella header "Pods-TestSwiftSingleViewApplication-umbrella.h"
+
+  export *
+  module * { export * }
+}
