@@ -68,9 +68,10 @@ fastlane/screenshots
 fastlane/test_output
 
 # 
+*.xcuserstate  
 project.xcworkspace  
-xcuserdata 
+xcuserdata  
 UserInterfaceState.xcuserstate  
 project.xcworkspace/  
 xcuserdata/  
-UserInterface.xcuserstate
+UserInterface.xcuserstate 
