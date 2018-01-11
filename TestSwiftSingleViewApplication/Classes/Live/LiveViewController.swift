@@ -12,18 +12,25 @@ class LiveViewController: UIViewController {
     
     fileprivate let identifier = "LSFunctionCell"
     
-    @IBOutlet weak var tableView: UITableView! {
-        didSet {
-            tableView.tableFooterView = UIView()
-            tableView.backgroundColor = UIColor.white
-        }
-    }
-    
     
     let viewModel = LiveStreamingViewModel()
     
+
+    fileprivate  lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.backgroundColor = UIColor.blue
+        return tableView
+    }()
+}
+//MARK: - 生命周期方法
+extension LiveViewController {
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.red
+        //MARK: - 添加子控件
+        view.addSubview(tableView)
         
         //加载数据
         loadData()
@@ -37,19 +44,21 @@ class LiveViewController: UIViewController {
             }
             
         }
-        
     }
     
-    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        tableView.frame = view.bounds
+    }
 }
-
 extension LiveViewController {
     
     fileprivate func loadData() {
         
     }
 }
+
 
 extension LiveViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

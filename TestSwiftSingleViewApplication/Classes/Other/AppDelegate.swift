@@ -24,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController()
+//        self.window?.rootViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController()
+//        self.window?.rootViewController = LiveViewController()
+        window?.rootViewController = TabBarController()
         self.window?.makeKeyAndVisible()
     }
 

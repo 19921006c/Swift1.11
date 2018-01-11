@@ -24,6 +24,12 @@
 		622747062006068400D65646 /* TopicTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622747052006068400D65646 /* TopicTitleModel.swift */; };
 		62274708200607D200D65646 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62274707200607D200D65646 /* TopicViewController.swift */; };
 		6227470A2006085900D65646 /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622747092006085900D65646 /* const.swift */; };
+		628367672006F1870019762A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628367662006F1870019762A /* TabBarController.swift */; };
+		628367692006F3940019762A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628367682006F3940019762A /* DiscoverViewController.swift */; };
+		6283676B2006F3A50019762A /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283676A2006F3A50019762A /* PlayViewController.swift */; };
+		6283676D2006F3B10019762A /* eDAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283676C2006F3B10019762A /* eDAViewController.swift */; };
+		6283676F2006F3C00019762A /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283676E2006F3C00019762A /* MineViewController.swift */; };
+		628367712006F5200019762A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628367702006F5200019762A /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		622747052006068400D65646 /* TopicTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTitleModel.swift; sourceTree = "<group>"; };
 		62274707200607D200D65646 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		622747092006085900D65646 /* const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
+		628367662006F1870019762A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		628367682006F3940019762A /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		6283676A2006F3A50019762A /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		6283676C2006F3B10019762A /* eDAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eDAViewController.swift; sourceTree = "<group>"; };
+		6283676E2006F3C00019762A /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		628367702006F5200019762A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,13 +169,13 @@
 		622746D62006066200D65646 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				622746D72006066200D65646 /* eDA */,
-				622746DB2006066200D65646 /* Discover */,
-				622746DF2006066200D65646 /* Other */,
 				622746E42006066200D65646 /* Live */,
-				622746ED2006066200D65646 /* Mine */,
+				622746DB2006066200D65646 /* Discover */,
 				622746F12006066200D65646 /* Play */,
+				622746D72006066200D65646 /* eDA */,
+				622746ED2006066200D65646 /* Mine */,
 				622746F52006066200D65646 /* Main */,
+				622746DF2006066200D65646 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -181,6 +193,7 @@
 		622746D82006066200D65646 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6283676C2006F3B10019762A /* eDAViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +225,7 @@
 		622746DC2006066200D65646 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				628367682006F3940019762A /* DiscoverViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +307,7 @@
 		622746EE2006066200D65646 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6283676E2006F3C00019762A /* MineViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,6 +339,7 @@
 		622746F22006066200D65646 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6283676A2006F3A50019762A /* PlayViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,6 +380,8 @@
 		622746F82006066200D65646 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				628367662006F1870019762A /* TabBarController.swift */,
+				628367702006F5200019762A /* NavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -610,12 +628,18 @@
 				622747012006066200D65646 /* LSFunctionCell.swift in Sources */,
 				622746FF2006066200D65646 /* ViewController.swift in Sources */,
 				62274708200607D200D65646 /* TopicViewController.swift in Sources */,
+				6283676F2006F3C00019762A /* MineViewController.swift in Sources */,
+				628367672006F1870019762A /* TabBarController.swift in Sources */,
+				6283676B2006F3A50019762A /* PlayViewController.swift in Sources */,
 				622747032006066200D65646 /* LiveStreamingViewModel.swift in Sources */,
+				628367712006F5200019762A /* NavigationController.swift in Sources */,
 				622747002006066200D65646 /* LiveViewController.swift in Sources */,
 				622747062006068400D65646 /* TopicTitleModel.swift in Sources */,
 				6227470A2006085900D65646 /* const.swift in Sources */,
+				628367692006F3940019762A /* DiscoverViewController.swift in Sources */,
 				622747042006066200D65646 /* NetworkTool.swift in Sources */,
 				622746FD2006066200D65646 /* AppDelegate.swift in Sources */,
+				6283676D2006F3B10019762A /* eDAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
